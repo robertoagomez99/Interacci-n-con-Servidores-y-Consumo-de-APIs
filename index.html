@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>CRUD de Productos</title>
+</head>
+<body>
+  <h1>Gestion de  Productos (CRUD)</h1>
+
+  <section>
+    <h2>Crear Producto</h2>
+    <input type="text"  id="crear-nombre" placeholder="Nombre">
+    <input type="number" id="crear-precio" placeholder="Precio">
+    <button onclick="crearProducto()">Crear</button>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2>Actualizar Producto</h2>
+    <input type="number" id="actualizar-id" placeholder="ID a actualizar">
+    <input type="text" id="actualizar-nombre" placeholder="Nuevo nombre">
+    <input type="number" id="actualizar-precio" placeholder="Nuevo precio">
+    <button  onclick="actualizarProducto()">Actualizar</button>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2>Eliminar Producto</h2>
+    <input type="number"  id="eliminar-id" placeholder="ID a eliminar">
+    <button onclick="eliminarProducto()" >Eliminar </button>
+  </section>
+
+  <hr>
+
+  <section>
+    <h2>Ver Productos</h2>
+    <button onclick="verProductos()">Ver todos</button>
+  </section>
+
+  <hr>
+
+  <div id="resultado"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
